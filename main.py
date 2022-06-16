@@ -13,7 +13,7 @@ class Lottery:
                 self.participant_list.append(customer)
         return self.participant_list
     
-    def get_random_numbers(self, list_of_chances):
+    def get_random_numbers(self):
         self.participant_list = self.create_list_of_chances()
         for i in range(0,2):
             print(colored(self.participant_list, 'red'))
@@ -27,5 +27,5 @@ class Lottery:
 
 first = Lottery()
 first.add_customers_to_set()
-list_of_chances = first.create_list_of_chances()
-first.get_random_numbers(list_of_chances)
+first.create_list_of_chances()
+first.get_random_numbers()
