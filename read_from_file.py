@@ -18,4 +18,3 @@ def add_to_set():
     info = zip(customers, chances)
     return list(info)
 
-print(add_to_set())
